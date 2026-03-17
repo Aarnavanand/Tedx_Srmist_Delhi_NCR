@@ -21,7 +21,7 @@ export default function Hero() {
   const [mounted, setMounted] = useState(false);
 
   const calculateTimeLeft = useCallback((): TimeLeft => {
-    const eventDate = new Date('2026-01-21T09:00:00').getTime();
+    const eventDate = new Date('2026-03-30T10:00:00').getTime();
     const now = new Date().getTime();
     const difference = eventDate - now;
 
@@ -162,7 +162,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12 max-w-4xl mx-auto">
           <div className="flex items-center justify-center space-x-2 sm:space-x-3 text-neutral-200">
             <Calendar className="w-5 h-5 sm:w-6 sm:h-6 text-[#EB0028]" />
-            <span className="text-sm sm:text-base md:text-lg font-bold">January 21, 2026</span>
+            <span className="text-sm sm:text-base md:text-lg font-bold">March 30, 2026</span>
           </div>
           <div className="flex items-center justify-center space-x-2 sm:space-x-3 text-neutral-200">
             <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-[#EB0028]" />
@@ -170,11 +170,11 @@ export default function Hero() {
           </div>
           <div className="flex items-center justify-center space-x-2 sm:space-x-3 text-neutral-200">
             <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-[#EB0028]" />
-            <span className="text-sm sm:text-base md:text-lg font-bold">SRM Auditorium</span>
+            <span className="text-sm sm:text-base md:text-lg font-bold">Easwari Auditorium</span>
           </div>
           <div className="flex items-center justify-center space-x-2 sm:space-x-3 text-neutral-200">
             <Users className="w-5 h-5 sm:w-6 sm:h-6 text-[#EB0028]" />
-            <span className="text-sm sm:text-base md:text-lg font-bold">200+ Attendees</span>
+            <span className="text-sm sm:text-base md:text-lg font-bold">600+ Attendees</span>
           </div>
         </div>
 

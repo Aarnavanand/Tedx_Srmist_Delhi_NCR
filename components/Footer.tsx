@@ -90,8 +90,8 @@ const Footer = () => {
 
               <div className="pt-2 sm:pt-4">
                 <p className="text-neutral-400 mb-1 sm:mb-2 font-medium text-xs sm:text-sm">Event Date:</p>
-                <p className="text-[#EB0028] font-bold text-sm sm:text-base md:text-lg">January 21, 2026</p>
-                <p className="text-neutral-400 text-xs sm:text-sm md:text-base">10:00 AM - 4:00 PM</p>
+                <p className="text-[#EB0028] font-bold text-sm sm:text-base md:text-lg">March 30, 2026</p>
+                <p className="text-neutral-400 text-xs sm:text-sm md:text-base">10:00 AM - 2:00 PM</p>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ const Footer = () => {
         <div className="mt-8 sm:mt-12 md:mt-16 pt-6 sm:pt-8 border-t border-neutral-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
             <div className="text-neutral-400 text-center md:text-left">
-              <p className="text-xs sm:text-sm">© 2025 TED<sup>x</sup> SRMIST NCR Ghaziabad. All rights reserved.</p>
+              <p className="text-xs sm:text-sm">© 2026 TED<sup>x</sup> SRMIST NCR Ghaziabad. All rights reserved.</p>
               <p className="mt-1 text-xs sm:text-sm">
                 This independent TED<sup>x</sup> event is operated under license from TED.
               </p>

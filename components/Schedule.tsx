@@ -305,7 +305,7 @@ const Schedule = () => {
             <div className="text-neutral-200 font-medium text-xs sm:text-sm md:text-base">Panel Discussion</div>
           </div>
           <div className="text-center p-4 sm:p-6 md:p-8 bg-neutral-900 border border-neutral-800 hover:border-[#EB0028] transition-all duration-300 rounded-none">
-            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#EB0028] mb-2 sm:mb-3">9 hrs</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#EB0028] mb-2 sm:mb-3">4 hrs</div>
             <div className="text-neutral-200 font-medium text-xs sm:text-sm md:text-base">Full Experience</div>
           </div>
         </div>
