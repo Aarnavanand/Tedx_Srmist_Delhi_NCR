@@ -52,7 +52,7 @@ const Footer = () => {
                 { label: 'About TEDx', href: '#about' },
                 { label: 'Speakers', href: '#speakers' },
                 { label: 'Schedule', href: '#schedule' },
-                { label: 'Register', href: '#register' },
+                // { label: 'Register', href: '#register' },
                 { label: 'Sponsors', href: '#sponsors' },
                 { label: 'Contact', href: '#contact' },
               ].map((link) => (

@@ -95,7 +95,7 @@ export default function Home() {
         <About />
         <Speakers />
         <Schedule />
-        <Registration />
+        {/* <Registration /> */}
         <Sponsors />
         <Contact />
       </main>
