@@ -208,7 +208,7 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
           <a
-            href="#register"
+            href="https://unstop.com/o/y9ecUP8"
             className="elysium-btn w-full sm:w-auto bg-[#EB0028] hover:bg-[#c71b23] text-white px-8 py-4 text-lg font-bold transition-all duration-300 text-center rounded-none"
           >
             Enter Elysium

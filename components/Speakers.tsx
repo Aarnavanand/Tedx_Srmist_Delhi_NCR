@@ -73,86 +73,60 @@ const Speakers = () => {
     return () => ctx.revert();
   }, [mounted]);
 
-  const speakers = [
-    {
-      name: 'Dr. Priya Sharma',
-      role: 'Positive Psychology Researcher',
-      topic: 'The Science of Happiness: What Research Tells Us',
-      image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Leading researcher in positive psychology and wellbeing science, with over 15 years of experience in happiness research.',
-      tags: ['Happiness', 'Psychology', 'Wellbeing'],
-      social: {
-        linkedin: '#',
-        twitter: '#'
-      },
-      visible: false
+const speakers = [
+  {
+    name: 'Pankhuri Sharma',
+    role: 'Senior Private Banking Professional & Author',
+    topic: 'Aligning With Your Higher Self in High-Performance Environments',
+    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
+    bio: 'Author of "Align With Your Higher Self" and a mental wellness advocate focusing on high-performance and competitive ecosystems.',
+    tags: ['Mental Wellness', 'Self Growth', 'High Performance'],
+    social: {
+      linkedin: '#',
+      twitter: '#'
     },
-    {
-      name: 'Raj Patel',
-      role: 'Mindfulness Coach & Social Entrepreneur',
-      topic: 'Building Happy Communities Through Mindful Living',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Founder of multiple NGOs focused on community wellbeing and mindfulness, impacting over 100,000 lives through happiness initiatives.',
-      tags: ['Mindfulness', 'Community', 'Social Impact'],
-      social: {
-        linkedin: '#',
-        twitter: '#'
-      },
-      visible: false
+    visible: true
+  },
+  {
+    name: 'Shubham Gupta',
+    role: 'Founder of SpareVillage',
+    topic: 'Take the First Step: Innovation Beyond Comfort Zones',
+    image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400',
+    bio: 'Entrepreneur with a diverse journey from law to Bollywood to tech. Founder of SpareVillage, driving innovation in industrial procurement.',
+    tags: ['Entrepreneurship', 'Innovation', 'Leadership'],
+    social: {
+      linkedin: '#',
+      twitter: '#'
     },
-    {
-      name: 'Sarah Chen',
-      role: 'Work-Life Balance Expert',
-      topic: 'Finding Joy in Professional Life: The Future of Happy Workplaces',
-      image: 'https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Pioneer in workplace happiness research, developing breakthrough solutions for employee wellbeing and satisfaction.',
-      tags: ['Work-Life Balance', 'Employee Wellbeing', 'Happiness'],
-      social: {
-        linkedin: '#',
-        twitter: '#'
-      },
-      visible: false
+    visible: true
+  },
+  {
+    name: 'Krupal Chaudhary',
+    role: 'CEO & Founder of Demaze Technologies',
+    topic: 'Innovating the Future Through Technology',
+    image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400',
+    bio: 'Tech entrepreneur focused on building scalable digital solutions and driving innovation through modern technologies.',
+    tags: ['Technology', 'Startups', 'Innovation'],
+    social: {
+      linkedin: 'https://krupal.demaze.in/',
+      twitter: '#'
     },
-    {
-      name: 'Dr. Arjun Mehta',
-      role: 'Neuroscientist & Author',
-      topic: 'The Happy Brain: Neuroscience of Joy and Contentment',
-      image: 'https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Renowned neuroscientist studying the brain mechanisms of happiness and joy, bestselling author on positive neuroscience.',
-      tags: ['Neuroscience', 'Happiness', 'Brain Science'],
-      social: {
-        linkedin: '#',
-        twitter: '#'
-      },
-      visible: false
+    visible: true
+  },
+  {
+    name: 'Chinmaye Jain',
+    role: 'Entrepreneur | TradeTech | Sustainability Leader',
+    topic: 'Reimagining Global Trade Through Technology & Sustainability',
+    image: 'https://images.pexels.com/photos/3771074/pexels-photo-3771074.jpeg?auto=compress&cs=tinysrgb&w=400',
+    bio: 'Founder of CarbonDec and Co-founder of GlobConex, working at the intersection of international trade, technology, and climate innovation.',
+    tags: ['Sustainability', 'Global Trade', 'Technology'],
+    social: {
+      linkedin: 'https://linkedin.com/in/chinmayejain',
+      twitter: '#'
     },
-    {
-      name: 'Maya Krishnan',
-      role: 'Educational Happiness Advocate',
-      topic: 'Joyful Learning: Transforming Education Through Happiness',
-      image: 'https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Building next-generation learning platforms focused on joyful education and student wellbeing for millions worldwide.',
-      tags: ['Education', 'Student Wellbeing', 'Joyful Learning'],
-      social: {
-        linkedin: '#',
-        twitter: '#'
-      },
-      visible: false
-    },
-    {
-      name: 'David Kim',
-      role: 'Adventure Therapy Specialist',
-      topic: 'Finding Happiness Through Adventure and Exploration',
-      image: 'https://images.pexels.com/photos/2182975/pexels-photo-2182975.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Leading specialist in adventure therapy, helping people find happiness and purpose through outdoor experiences and exploration.',
-      tags: ['Adventure Therapy', 'Mental Health', 'Happiness'],
-      social: {
-        linkedin: '#',
-        twitter: '#'
-      },
-      visible: false
-    }
-  ];
+    visible: true
+  }
+];
 
   // Filter only visible speakers
   const visibleSpeakers = speakers.filter(speaker => speaker.visible);
@@ -244,15 +218,6 @@ const Speakers = () => {
           </div>
         )}
 
-        {/* More Speakers Coming */}
-        <div className="text-center mt-8 sm:mt-12 md:mt-16">
-          <div className="bg-neutral-900 border border-[#EB0028] p-6 sm:p-8 md:p-12 rounded-none text-white hover:shadow-[0_0_20px_rgba(235,0,40,0.3)] transition-all duration-300">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">Amazing Speakers Coming Soon!</h3>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl opacity-90 text-neutral-200">
-              We&apos;re curating an incredible lineup of speakers. Stay tuned for more announcements.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );

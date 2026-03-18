@@ -85,7 +85,7 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <Button
               className="bg-[#EB0028] hover:bg-[#c71b23] text-white px-6 py-2 text-sm xl:text-base font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(45,212,191,0.2)] border-none rounded-none"
-              onClick={() => document.getElementById('register')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.open('https://unstop.com/o/y9ecUP8', '_blank')}
             >
               Register Now
             </Button>
@@ -126,7 +126,7 @@ const Navbar = () => {
                 className="bg-[#EB0028] hover:bg-[#c71b23] text-white w-full py-3 text-sm xs:text-base font-bold rounded-none hover:shadow-[0_0_20px_rgba(45,212,191,0.2)]"
                 onClick={() => {
                   setIsOpen(false);
-                  document.getElementById('register')?.scrollIntoView({ behavior: 'smooth' });
+                  window.open('https://unstop.com/o/y9ecUP8', '_blank');
                 }}
               >
                 Register Now
