@@ -98,109 +98,91 @@ const Schedule = () => {
 
   const scheduleItems = [
     {
-      time: '8:30 AM',
-      title: 'Registration & Welcome Coffee',
+      time: '9:30 AM',
+      title: 'Entry & Registration',
       type: 'break',
       location: 'Main Lobby',
-      duration: '60 min',
-      description: 'Check-in, networking, and welcome refreshments'
+      duration: '30 min',
+      description: 'Attendee check-in, ID verification, and seating arrangement'
     },
     {
-      time: '9:30 AM',
+      time: '10:00 AM',
       title: 'Opening Ceremony',
       type: 'ceremony',
       speaker: 'TEDx Team',
       location: 'Main Auditorium',
       duration: '30 min',
-      description: 'Welcome address and event overview'
-    },
-    {
-      time: '10:00 AM',
-      title: 'The Science of Happiness: What Research Tells Us',
-      type: 'talk',
-      speaker: 'Dr. Priya Sharma',
-      location: 'Main Auditorium',
-      duration: '18 min',
-      description: 'Exploring the latest research on what truly makes us happy and fulfilled'
+      description: 'Welcome by host and introduction to TEDx and the event theme'
     },
     {
       time: '10:30 AM',
-      title: 'Building Happy Communities Through Mindful Living',
+      title: 'Speaker 1',
       type: 'talk',
-      speaker: 'Raj Patel',
+      speaker: 'Guest Speaker',
       location: 'Main Auditorium',
-      duration: '18 min',
-      description: 'How mindfulness and community connection can create lasting happiness'
+      duration: '20 min',
+      description: 'Inspiring TEDx talk session'
     },
     {
-      time: '11:00 AM',
-      title: 'Networking Break',
-      type: 'break',
-      location: 'Foyer Area',
-      duration: '30 min',
-      description: 'Connect with fellow attendees and speakers'
+      time: '10:50 AM',
+      title: 'Speaker 2',
+      type: 'talk',
+      speaker: 'Guest Speaker',
+      location: 'Main Auditorium',
+      duration: '20 min',
+      description: 'Inspiring TEDx talk session'
+    },
+    {
+      time: '11:10 AM',
+      title: 'Creative Segment',
+      type: 'panel',
+      location: 'Main Auditorium',
+      duration: '20 min',
+      description: 'Poetry, storytelling, performances, and digital or visual showcase'
     },
     {
       time: '11:30 AM',
-      title: 'Finding Joy in Professional Life',
+      title: 'Speaker 3',
       type: 'talk',
-      speaker: 'Sarah Chen',
+      speaker: 'Guest Speaker',
       location: 'Main Auditorium',
-      duration: '18 min',
-      description: 'Creating happy workplaces and finding fulfillment in your career'
+      duration: '20 min',
+      description: 'Inspiring TEDx talk session'
     },
     {
-      time: '12:00 PM',
-      title: 'The Happy Brain: Neuroscience of Joy',
+      time: '11:50 AM',
+      title: 'Speaker 4',
       type: 'talk',
-      speaker: 'Dr. Arjun Mehta',
+      speaker: 'Guest Speaker',
       location: 'Main Auditorium',
-      duration: '18 min',
-      description: 'Understanding how our brains create and maintain happiness'
+      duration: '20 min',
+      description: 'Inspiring TEDx talk session'
+    },
+    {
+      time: '12:10 PM',
+      title: 'Networking Break',
+      type: 'break',
+      location: 'Foyer Area',
+      duration: '20 min',
+      description: 'Refreshments and networking with attendees'
     },
     {
       time: '12:30 PM',
-      title: 'Lunch & Interactive Sessions',
-      type: 'break',
-      location: 'Dining Hall',
-      duration: '90 min',
-      description: 'Networking lunch with interactive workshops'
-    },
-    {
-      time: '2:00 PM',
-      title: 'Joyful Learning: Transforming Education',
-      type: 'talk',
-      speaker: 'Maya Krishnan',
-      location: 'Main Auditorium',
-      duration: '18 min',
-      description: 'How happiness and joy can revolutionize the way we learn'
-    },
-    {
-      time: '2:30 PM',
-      title: 'Finding Happiness Through Adventure',
-      type: 'talk',
-      speaker: 'David Kim',
-      location: 'Main Auditorium',
-      duration: '18 min',
-      description: 'How adventure and exploration can lead to profound happiness'
-    },
-    {
-      time: '3:00 PM',
-      title: 'Panel Discussion',
+      title: 'Audience Interaction',
       type: 'panel',
-      speaker: 'All Speakers',
+      speaker: 'Host & Audience',
       location: 'Main Auditorium',
-      duration: '45 min',
-      description: 'Q&A session with all speakers and audience interaction'
+      duration: '30 min',
+      description: 'Open mic Q&A, feedback collection, and fun activity'
     },
     {
-      time: '4:00 PM',
+      time: '1:00 PM',
       title: 'Closing Ceremony',
       type: 'ceremony',
       speaker: 'TEDx Team',
       location: 'Main Auditorium',
       duration: '30 min',
-      description: 'Closing remarks and thank you message'
+      description: 'Certificate distribution, thank you note, and group photo'
     }
   ];
 
@@ -293,20 +275,20 @@ const Schedule = () => {
         {/* Quick Overview */}
         <div ref={statsRef} className="mt-8 sm:mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
           <div className="text-center p-4 sm:p-6 md:p-8 bg-neutral-900 border border-neutral-800 hover:border-[#EB0028] transition-all duration-300 rounded-none">
-            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#EB0028] mb-2 sm:mb-3">5</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#EB0028] mb-2 sm:mb-3">4</div>
             <div className="text-neutral-200 font-medium text-xs sm:text-sm md:text-base">Inspiring Talks</div>
           </div>
           <div className="text-center p-4 sm:p-6 md:p-8 bg-neutral-900 border border-neutral-800 hover:border-[#EB0028] transition-all duration-300 rounded-none">
             <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#EB0028] mb-2 sm:mb-3">2</div>
-            <div className="text-neutral-200 font-medium text-xs sm:text-sm md:text-base">Networking Breaks</div>
+            <div className="text-neutral-200 font-medium text-xs sm:text-sm md:text-base">Ceremonies</div>
           </div>
           <div className="text-center p-4 sm:p-6 md:p-8 bg-neutral-900 border border-neutral-800 hover:border-[#EB0028] transition-all duration-300 rounded-none">
-            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#EB0028] mb-2 sm:mb-3">1</div>
-            <div className="text-neutral-200 font-medium text-xs sm:text-sm md:text-base">Panel Discussion</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#EB0028] mb-2 sm:mb-3">2</div>
+            <div className="text-neutral-200 font-medium text-xs sm:text-sm md:text-base">Interactive Segments</div>
           </div>
           <div className="text-center p-4 sm:p-6 md:p-8 bg-neutral-900 border border-neutral-800 hover:border-[#EB0028] transition-all duration-300 rounded-none">
             <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#EB0028] mb-2 sm:mb-3">4 hrs</div>
-            <div className="text-neutral-200 font-medium text-xs sm:text-sm md:text-base">Full Experience</div>
+            <div className="text-neutral-200 font-medium text-xs sm:text-sm md:text-base">Event Duration</div>
           </div>
         </div>
       </div>

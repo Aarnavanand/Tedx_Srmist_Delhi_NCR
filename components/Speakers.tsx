@@ -5,7 +5,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Linkedin, Twitter } from 'lucide-react';
+import { Linkedin, Instagram } from 'lucide-react';
 import Image from 'next/image';
 
 if (typeof window !== 'undefined') {
@@ -78,54 +78,54 @@ const speakers = [
     name: 'Pankhuri Sharma',
     role: 'Senior Private Banking Professional & Author',
     topic: 'Aligning With Your Higher Self in High-Performance Environments',
-    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: '/image2.jpeg',
     bio: 'Author of "Align With Your Higher Self" and a mental wellness advocate focusing on high-performance and competitive ecosystems.',
     tags: ['Mental Wellness', 'Self Growth', 'High Performance'],
     social: {
-      linkedin: '#',
-      twitter: '#'
+      linkedin: 'https://www.linkedin.com/in/pankhuri-sharma-501301a/',
+      Instagram: 'https://www.Instagram.com/panksishere'
     },
     visible: true
   },
-  {
-    name: 'Shubham Gupta',
-    role: 'Founder of SpareVillage',
-    topic: 'Take the First Step: Innovation Beyond Comfort Zones',
-    image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400',
-    bio: 'Entrepreneur with a diverse journey from law to Bollywood to tech. Founder of SpareVillage, driving innovation in industrial procurement.',
-    tags: ['Entrepreneurship', 'Innovation', 'Leadership'],
-    social: {
-      linkedin: '#',
-      twitter: '#'
-    },
-    visible: true
-  },
-  {
-    name: 'Krupal Chaudhary',
-    role: 'CEO & Founder of Demaze Technologies',
-    topic: 'Innovating the Future Through Technology',
-    image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400',
-    bio: 'Tech entrepreneur focused on building scalable digital solutions and driving innovation through modern technologies.',
-    tags: ['Technology', 'Startups', 'Innovation'],
-    social: {
-      linkedin: 'https://krupal.demaze.in/',
-      twitter: '#'
-    },
-    visible: true
-  },
-  {
-    name: 'Chinmaye Jain',
-    role: 'Entrepreneur | TradeTech | Sustainability Leader',
-    topic: 'Reimagining Global Trade Through Technology & Sustainability',
-    image: 'https://images.pexels.com/photos/3771074/pexels-photo-3771074.jpeg?auto=compress&cs=tinysrgb&w=400',
-    bio: 'Founder of CarbonDec and Co-founder of GlobConex, working at the intersection of international trade, technology, and climate innovation.',
-    tags: ['Sustainability', 'Global Trade', 'Technology'],
-    social: {
-      linkedin: 'https://linkedin.com/in/chinmayejain',
-      twitter: '#'
-    },
-    visible: true
-  }
+  // {
+  //   name: 'Shubham Gupta',
+  //   role: 'Founder of SpareVillage',
+  //   topic: 'Take the First Step: Innovation Beyond Comfort Zones',
+  //   image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //   bio: 'Entrepreneur with a diverse journey from law to Bollywood to tech. Founder of SpareVillage, driving innovation in industrial procurement.',
+  //   tags: ['Entrepreneurship', 'Innovation', 'Leadership'],
+  //   social: {
+  //     linkedin: '#',
+  //     Instagram: '#'
+  //   },
+  //   visible: true
+  // },
+  // {
+  //   name: 'Krupal Chaudhary',
+  //   role: 'CEO & Founder of Demaze Technologies',
+  //   topic: 'Innovating the Future Through Technology',
+  //   image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //   bio: 'Tech entrepreneur focused on building scalable digital solutions and driving innovation through modern technologies.',
+  //   tags: ['Technology', 'Startups', 'Innovation'],
+  //   social: {
+  //     linkedin: 'https://krupal.demaze.in/',
+  //     Instagram: '#'
+  //   },
+  //   visible: true
+  // },
+  // {
+  //   name: 'Chinmaye Jain',
+  //   role: 'Entrepreneur | TradeTech | Sustainability Leader',
+  //   topic: 'Reimagining Global Trade Through Technology & Sustainability',
+  //   image: 'https://images.pexels.com/photos/3771074/pexels-photo-3771074.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //   bio: 'Founder of CarbonDec and Co-founder of GlobConex, working at the intersection of international trade, technology, and climate innovation.',
+  //   tags: ['Sustainability', 'Global Trade', 'Technology'],
+  //   social: {
+  //     linkedin: 'https://linkedin.com/in/chinmayejain',
+  //     Instagram: '#'
+  //   },
+  //   visible: true
+  // }
 ];
 
   // Filter only visible speakers
@@ -173,16 +173,16 @@ const speakers = [
                   <div className="absolute bottom-3 sm:bottom-4 md:bottom-6 left-3 sm:left-4 md:left-6 right-3 sm:right-4 md:right-6 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
                     <div className="flex space-x-2 sm:space-x-3">
                       <a
-                        href={speaker.social.linkedin}
+                        href={speaker.social.linkedin} target='_blank'
                         className="w-8 h-8 sm:w-10 sm:h-10 bg-white/90 flex items-center justify-center text-[#EB0028] hover:bg-white hover:scale-110 transition-all duration-300 rounded-none"
                       >
                         <Linkedin size={16} className="sm:w-[18px] sm:h-[18px]" />
                       </a>
                       <a
-                        href={speaker.social.twitter}
+                        href={speaker.social.Instagram} target='_blank'
                         className="w-8 h-8 sm:w-10 sm:h-10 bg-white/90 flex items-center justify-center text-[#EB0028] hover:bg-white hover:scale-110 transition-all duration-300 rounded-none"
                       >
-                        <Twitter size={16} className="sm:w-[18px] sm:h-[18px]" />
+                        <Instagram size={16} className="sm:w-[18px] sm:h-[18px]" />
                       </a>
                     </div>
                   </div>
