@@ -61,7 +61,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-lg xs:text-xl sm:text-2xl md:text-3xl font-black text-[#EB0028] font-sans tracking-tighter">
-              TED<sup>x</sup>
+              TED<sup>x</sup>SRMIST Delhi NCR
             </Link>
           </div>
 

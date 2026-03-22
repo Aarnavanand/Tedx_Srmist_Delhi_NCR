@@ -12,18 +12,18 @@ export const metadata: Metadata = {
   publisher: 'SRMIST Delhi NCR Campus',
   robots: 'index, follow',
   alternates: {
-    canonical: 'https://tedxsrmistncr.com',
+    canonical: 'https://www.tedxsrmistdelhincr.com',
   },
   openGraph: {
     title: 'TEDx SRMIST Delhi NCR 2026 - Elysium',
     description: 'Join us for an inspiring TEDx event on March 30, 2025 at SRMIST Delhi NCR. Theme: Elysium - The Pursuit of inner Paradise.',
     type: 'website',
-    url: 'https://tedxsrmistncr.com',
+    url: 'https://www.tedxsrmistdelhincr.com',
     siteName: 'TEDx SRMIST NCR Ghaziabad',
     locale: 'en_US',
     images: [
       {
-        url: 'https://tedxsrmistncr.com/og-image.jpg',
+        url: 'https://www.tedxsrmistdelhincr.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'TEDx SRMIST NCR Ghaziabad 2025 - Elysium Night',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'TEDx SRMIST Delhi NCR 2026 - Elysium',
     description: 'Join us for an inspiring TEDx event on March 30, 2025 at SRMIST Delhi NCR. Theme: Elysium - The Pursuit of inner Paradise.',
-    images: ['https://tedxsrmistncr.com/og-image.jpg'],
+    images: ['https://www.tedxsrmistdelhincr.com/og-image.jpg'],
     creator: '@tedxsrmistncr',
   },
   verification: {
@@ -57,8 +57,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/Tedlogo.jpg" type="image/jpeg" />
-        <link rel="apple-touch-icon" href="/Tedlogo.jpg" />
+        <link rel="icon" href="/tedSRMISTDelhiNCR.png" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/tedSRMISTDelhiNCR.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#0a0a0c" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
